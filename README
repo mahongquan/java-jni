@@ -1,3 +1,8 @@
+ChangeLog
+copy *.c into src
+remove folder bin,jni
+add genInclude.sh,makefile,compile.sh,run.sh
+
 Reference
 http://my.unix-center.net/~Simon_fu/?p=359
 http://java.sun.com/docs/books/jni/html/jniTOC.html
