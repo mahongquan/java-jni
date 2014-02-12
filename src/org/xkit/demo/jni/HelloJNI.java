@@ -40,7 +40,7 @@ public class HelloJNI {
 	}
 
 	static {
-		System.out.println(System.getProperty("java.library.path"));
+		System.out.println("java.library.path="+System.getProperty("java.library.path"));
 		System.loadLibrary("HelloJNI");
 	}
 
