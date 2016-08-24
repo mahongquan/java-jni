@@ -1,3 +1,2 @@
-INCLUDE = -I/usr/lib/jvm/java-7-openjdk-amd64/include/
 all:
-	gcc -shared -fPIC -o libHelloJNI.so org_xkit_demo_jni_HelloJNI.c -I/usr/lib/jvm/java-7-openjdk-amd64/include/
+	gcc -Wl,--add-stdcall-alias -shared -o HelloJNI.dll org_xkit_demo_jni_HelloJNI.c -I"d:/Program Files/Java/jdk1.8.0_51/include/win32" -I"d:/Program Files/Java/jdk1.8.0_51/include"

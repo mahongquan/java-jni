@@ -2,19 +2,20 @@ package org.xkit.demo.jni;
 
 public class HelloJNI {
 
-	private native boolean initNative();
+	// private native boolean initNative();
 
-	private native boolean finalizeNative();
+	// private native boolean finalizeNative();
 
-	private native void print();
+	// private native void print();
 
-	private native void print(String msg);
+	// private native void print(String msg);
 
-	private native String echo(int times, String msg);
+	// private native String echo(int times, String msg);
+	private native String http(String url, String header,String cookie,String data);
 
-	private native int[] draw(int[] data);
+	// private native int[] draw(int[] data);
 
-	private native void call();
+	// private native void call();
 
 	public void vmSayHello(String greeting) {
 		System.out.println(greeting);
@@ -22,19 +23,24 @@ public class HelloJNI {
 
 	public static void main(String[] args) {
 		HelloJNI jni = new HelloJNI();
-		
-		jni.print();
-		jni.print("Hello, I'm from Java layer");
-		jni.print("你好，我来自Java层");
+		String url="http://www.baidu.com";
+		String header="";
+		String cookie="";
+		String data="";
+		String res=jni.http(url,header,cookie,data);
+		System.out.print(res);
+		System.out.print("\n");
+		// jni.print();
+		// jni.print("Hello, I'm from Java layer");
 
-		System.out.println(jni.echo(2, "am i low case?"));
+		// System.out.println(jni.echo(2, "am i low case?"));
 
-		int[] data = { 7, 4, 5, 63, 3 };
-		data = jni.draw(data);
+		// int[] data = { 7, 4, 5, 63, 3 };
+		// data = jni.draw(data);
 
-		printArray(data);
-		jni.initNative();
-		jni.call();
+		// printArray(data);
+		// jni.initNative();
+		// jni.call();
 
 //		jni.finalizeNative(); has something wrong here
 	}
