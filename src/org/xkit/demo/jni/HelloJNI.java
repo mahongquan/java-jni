@@ -23,7 +23,7 @@ public class HelloJNI {
 
 	public static void main(String[] args) {
 		HelloJNI jni = new HelloJNI();
-		String url="http://www.baidu.com";
+		String url="http://localhost:8000/rest/login";
 		String header="";
 		String cookie="";
 		String data="";

@@ -8,14 +8,18 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="HelloJNI" prefix_auto="1" extension_auto="1" />
+				<Option output="c1" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="3" />
+				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
 				</Compiler>
+				<Linker>
+					<Add directory="../../cygwin/lib" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="j1" prefix_auto="1" extension_auto="1" />
@@ -30,22 +34,21 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="user32" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-Wl,--add-stdcall-alias" />
-			<Add option="-shared" />
 			<Add directory="../../Program Files/Java/jdk1.8.0_51/include/win32" />
 			<Add directory="../../Program Files/Java/jdk1.8.0_51/include" />
 			<Add directory="../curl-7.50.1/include" />
 		</Compiler>
 		<Linker>
-			<Add library="../lib/nossl/libcurldll.a" />
+			<Add library="../lib/nossl/libcurl.a" />
+			<Add library="../../codeblocks-16.01mingw-nosetup/MinGW/lib/libmingw32.a" />
 		</Linker>
-		<Unit filename="org_xkit_demo_jni_HelloJNI.cpp" />
-		<Unit filename="org_xkit_demo_jni_HelloJNI.h" />
+		<Unit filename="simple.c">
+			<Option compilerVar="gcc" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
