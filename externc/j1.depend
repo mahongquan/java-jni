@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1472174608 source:d:\java-jni\externc\module_a.cpp
+
+1472174745 source:d:\java-jni\externc\module_b.cpp
+	"MODULE_A.H"
+
+1472174865 d:\java-jni\externc\module_a.h
+
+1472174608 source:d:\java-jni\externc\module_a.c
+
