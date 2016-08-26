@@ -1,2 +1,2 @@
-javac  -classpath .  org/xkit/demo/jni/HelloJNI.java
+javac  -classpath .  com\example\curltest\MainActivity.java
 

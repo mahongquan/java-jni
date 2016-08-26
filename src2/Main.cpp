@@ -10,8 +10,8 @@ void Java_com_example_curltest_MainActivity_TestDownload(JNIEnv* env,
 {
 	DownLoadModule download;
 	const char* url =
-			"http://s3.amazonaws.com/hum9-lwg8-qa2w/PsiphonAndroid.apk";
-	int nRet = download.DownLoad(url, "/sdcard/Download", "PsiphonAndroid.apk");
+			"http://localhost:8000/static/err1.html";
+	int nRet = download.DownLoad(url, "d:\\", "err1.html");
 	if (nRet == 0)
 		LOGI("download success!");
 	else

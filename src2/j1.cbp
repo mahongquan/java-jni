@@ -37,6 +37,7 @@
 		<Compiler>
 			<Add option="-Wl,--add-stdcall-alias" />
 			<Add option="-shared" />
+			<Add option="-fpermissive" />
 			<Add directory="../../Program Files/Java/jdk1.8.0_51/include/win32" />
 			<Add directory="../../Program Files/Java/jdk1.8.0_51/include" />
 			<Add directory="../curl-7.50.1/include" />
@@ -44,8 +45,13 @@
 		<Linker>
 			<Add library="../lib/nossl/libcurldll.a" />
 		</Linker>
-		<Unit filename="org_xkit_demo_jni_HelloJNI.cpp" />
-		<Unit filename="org_xkit_demo_jni_HelloJNI.h" />
+		<Unit filename="DownloadModule.cpp" />
+		<Unit filename="DownloadModule.h" />
+		<Unit filename="HttpPostModule.cpp" />
+		<Unit filename="HttpPostModule.h" />
+		<Unit filename="JNIUtil.cpp" />
+		<Unit filename="JNIUtil.h" />
+		<Unit filename="Main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
