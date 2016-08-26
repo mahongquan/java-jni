@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include "org_xkit_demo_jni_HelloJNI.h"
 #include <sstream>
 #include <curl/curl.h>
-#ifdef __cplusplus  
-extern "C" {  
-#endif  
 void showStream(std::stringstream *ss)
 {
   std::string s=ss->str();
@@ -32,11 +28,9 @@ static size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream)
   //printf("end=======================\n");
   return size*nmemb;
 }
-///////////////////////////////////////////////////////////////////////////////////////////////
-JNIEXPORT jstring JNICALL Java_org_xkit_demo_jni_HelloJNI_http
-  (JNIEnv *env, jobject obj, jstring url, jstring header, jstring cookie, jstring data){
+int main(){
 
-  const char *str_url = env-> GetStringUTFChars(url, 0);
+  const char *str_url = "http://localhost:8000/rest/backbone/";
   std::stringstream pagefile;
 // 	printf("url:%s\n",str_url);
 //   	//////////
@@ -51,11 +45,12 @@ JNIEXPORT jstring JNICALL Java_org_xkit_demo_jni_HelloJNI_http
   /* set URL to get here */
   curl_easy_setopt(curl_handle, CURLOPT_URL, str_url);
   curl_easy_setopt(curl_handle, CURLOPT_POSTFIELDS, "username=mahongquan&password=333333");
-
+  curl_easy_setopt(curl_handle, CURLOPT_COOKIEFILE, "D:/java-jni/src/cookie.txt");
+  curl_easy_setopt(curl_handle, CURLOPT_COOKIEJAR, "D:/java-jni/src/cookie.txt");
   /* Switch on full protocol/debug output while testing */
   curl_easy_setopt(curl_handle, CURLOPT_VERBOSE, 1L);
-  curl_easy_setopt(curl_handle, CURLOPT_POST, 1);   
-  curl_easy_setopt(curl_handle, CURLOPT_VERBOSE, 1); 
+  curl_easy_setopt(curl_handle, CURLOPT_POST, 1);
+  curl_easy_setopt(curl_handle, CURLOPT_VERBOSE, 1);
   curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, 1);
   /* disable progress meter, set to 0L to enable and disable debug output */
   curl_easy_setopt(curl_handle, CURLOPT_NOPROGRESS, 1L);
@@ -67,7 +62,7 @@ JNIEXPORT jstring JNICALL Java_org_xkit_demo_jni_HelloJNI_http
   //char* sql = NULL;
   //size_t len = 0;
   //pagefile =open_memstream(&sql, &len);// fopen(pagefilename, "wb");
-  
+
   //pagefile = fopen("out.html", "wb");
 
     /* write the page body to this file handle */
@@ -80,23 +75,7 @@ JNIEXPORT jstring JNICALL Java_org_xkit_demo_jni_HelloJNI_http
 
   /* cleanup curl stuff */
     curl_easy_cleanup(curl_handle);
-//    printf("===================\n");
-//    printf("%s",sql);
-//    printf("--------\n");
-//   	///////////////
-// 	// const char *str_url = (*env) -> GetStringUTFChars(env, url, 0);
-	// printf("url:%s\n",str_url);
-  // char * a="aaaaaaaa";
-  // char * b="bbbbbbbbb";
-  // write_data(a,1,strlen(a),&pagefile);
-  // write_data(b,1,strlen(b),&pagefile);
-	env-> ReleaseStringUTFChars( url, str_url);
-  std::string result=pagefile.str();
-	jstring str = env->NewStringUTF(result.c_str());
-	//free(sql);
-	return str;
+    std::string out=pagefile.str();
+    printf("%s",out.c_str());
+	return 0;
 }
-#ifdef __cplusplus  
-}  
-#endif 
-////////////////////////////////////////////////////////////////////////////////////////////////////

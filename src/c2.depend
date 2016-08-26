@@ -1,0 +1,287 @@
+# depslib dependency file v1.0
+1472085251 source:d:\java-jni\src\simple.c
+	<stdio.h>
+	<curl/curl.h>
+
+1466684884 d:\cygwin\usr\include\stdio.h
+	"_ansi.h"
+	<sys/cdefs.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/reent.h>
+	<sys/types.h>
+	<sys/stdio.h>
+
+1466684883 d:\cygwin\usr\include\_ansi.h
+	<newlib.h>
+	<sys/config.h>
+
+1466684884 d:\cygwin\usr\include\newlib.h
+	<_newlib_version.h>
+
+1466684884 d:\cygwin\usr\include\_newlib_version.h
+
+1466684884 d:\cygwin\usr\include\sys\config.h
+	<machine/ieeefp.h>
+	<sys/features.h>
+	<cygwin/config.h>
+
+1466684884 d:\cygwin\usr\include\machine\ieeefp.h
+
+1466684884 d:\cygwin\usr\include\sys\features.h
+	<_newlib_version.h>
+
+1466684884 d:\cygwin\usr\include\cygwin\config.h
+	"../tlsoffsets64.h"
+	"../tlsoffsets.h"
+
+1466684884 d:\cygwin\usr\include\sys\cdefs.h
+	<machine/_default_types.h>
+	<sys/features.h>
+	<stddef.h>
+
+1466684884 d:\cygwin\usr\include\machine\_default_types.h
+	<sys/features.h>
+	<limits.h>
+
+1466684884 d:\cygwin\usr\include\limits.h
+	<features.h>
+	<bits/wordsize.h>
+
+1466684884 d:\cygwin\usr\include\features.h
+	<sys/cdefs.h>
+	<sys/features.h>
+
+1466684884 d:\cygwin\usr\include\bits\wordsize.h
+
+1466684884 d:\cygwin\usr\include\sys\reent.h
+	<_ansi.h>
+	<stddef.h>
+	<sys/_types.h>
+	<sys/types.h>
+	<sys/custom_file.h>
+	<assert.h>
+
+1466684884 d:\cygwin\usr\include\sys\_types.h
+	<newlib.h>
+	<sys/config.h>
+	<machine/_types.h>
+	<sys/lock.h>
+	<stddef.h>
+
+1466684884 d:\cygwin\usr\include\machine\_types.h
+	<machine/_default_types.h>
+
+1466684884 d:\cygwin\usr\include\sys\lock.h
+
+1466684884 d:\cygwin\usr\include\sys\types.h
+	<_ansi.h>
+	<sys/cdefs.h>
+	<machine/_types.h>
+	<stddef.h>
+	<sys/_types.h>
+	<sys/_stdint.h>
+	<machine/endian.h>
+	<sys/select.h>
+	<sys/features.h>
+	<sys/sched.h>
+	<sys/cpuset.h>
+	<machine/types.h>
+
+1466684884 d:\cygwin\usr\include\sys\_stdint.h
+	<machine/_default_types.h>
+
+1466684884 d:\cygwin\usr\include\machine\endian.h
+	<sys/cdefs.h>
+	<sys/_types.h>
+	<machine/_endian.h>
+
+1466684884 d:\cygwin\usr\include\machine\_endian.h
+	<_ansi.h>
+	<bits/endian.h>
+
+1466684884 d:\cygwin\usr\include\bits\endian.h
+
+1466684884 d:\cygwin\usr\include\sys\select.h
+	<sys/cdefs.h>
+	<sys/_sigset.h>
+	<sys/_timeval.h>
+	<sys/timespec.h>
+
+1466684884 d:\cygwin\usr\include\sys\_sigset.h
+
+1466684884 d:\cygwin\usr\include\sys\_timeval.h
+	<sys/_types.h>
+
+1466684884 d:\cygwin\usr\include\sys\timespec.h
+	<sys/cdefs.h>
+	<sys/_timespec.h>
+
+1466684884 d:\cygwin\usr\include\sys\_timespec.h
+	<sys/_types.h>
+
+1466684884 d:\cygwin\usr\include\sys\sched.h
+	<sys/_timespec.h>
+
+1466684884 d:\cygwin\usr\include\machine\types.h
+	<endian.h>
+	<bits/wordsize.h>
+	<sys/_timespec.h>
+	<sys/sysmacros.h>
+
+1466684884 d:\cygwin\usr\include\endian.h
+	<sys/config.h>
+	<machine/endian.h>
+	<byteswap.h>
+
+1466684884 d:\cygwin\usr\include\byteswap.h
+
+1466684884 d:\cygwin\usr\include\sys\sysmacros.h
+	<sys/types.h>
+
+1466684884 d:\cygwin\usr\include\sys\custom_file.h
+
+1466684883 d:\cygwin\usr\include\assert.h
+	"_ansi.h"
+
+1466684884 d:\cygwin\usr\include\sys\stdio.h
+	<sys/cdefs.h>
+	<sys/lock.h>
+
+1470252655 d:\cygwin\usr\include\curl\curl.h
+	"curlver.h"
+	"curlbuild.h"
+	"curlrules.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"typecheck-gcc.h"
+
+1470252655 d:\cygwin\usr\include\curl\curlver.h
+
+1470252655 d:\cygwin\usr\include\curl\curlbuild.h
+	<windows.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<stdint.h>
+	<inttypes.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1466684884 d:\cygwin\usr\include\stdint.h
+	<machine/_default_types.h>
+	<sys/_intsup.h>
+	<sys/_stdint.h>
+
+1466684884 d:\cygwin\usr\include\sys\_intsup.h
+	<sys/features.h>
+	<limits.h>
+
+1466684883 d:\cygwin\usr\include\inttypes.h
+	<newlib.h>
+	<sys/config.h>
+	<sys/_intsup.h>
+	<stdint.h>
+	<stddef.h>
+
+1466684884 d:\cygwin\usr\include\sys\socket.h
+	<features.h>
+	<cygwin/socket.h>
+	<sys/time.h>
+
+1466684884 d:\cygwin\usr\include\cygwin\socket.h
+	<sys/types.h>
+	<asm/socket.h>
+	<cygwin/sockios.h>
+	<sys/uio.h>
+
+1466684884 d:\cygwin\usr\include\asm\socket.h
+	<cygwin/if.h>
+
+1466684884 d:\cygwin\usr\include\cygwin\if.h
+	<sys/types.h>
+	<cygwin/socket.h>
+
+1466684884 d:\cygwin\usr\include\cygwin\sockios.h
+
+1466684884 d:\cygwin\usr\include\sys\uio.h
+	<stddef.h>
+	<sys/types.h>
+	<sys/cdefs.h>
+
+1466684884 d:\cygwin\usr\include\sys\time.h
+	<_ansi.h>
+	<sys/cdefs.h>
+	<sys/_timeval.h>
+	<sys/types.h>
+	<sys/timespec.h>
+	<sys/select.h>
+	<time.h>
+	<machine/_time.h>
+
+1466684884 d:\cygwin\usr\include\time.h
+	"_ansi.h"
+	<sys/cdefs.h>
+	<sys/reent.h>
+	<stddef.h>
+	<machine/time.h>
+	<sys/types.h>
+	<sys/timespec.h>
+	<sys/features.h>
+	<cygwin/time.h>
+	<signal.h>
+
+1466684884 d:\cygwin\usr\include\machine\time.h
+	<sys/_timespec.h>
+
+1466684884 d:\cygwin\usr\include\cygwin\time.h
+
+1466684884 d:\cygwin\usr\include\signal.h
+	"_ansi.h"
+	<sys/cdefs.h>
+	<sys/signal.h>
+
+1466684884 d:\cygwin\usr\include\sys\signal.h
+	"_ansi.h"
+	<sys/cdefs.h>
+	<sys/features.h>
+	<sys/types.h>
+	<sys/_sigset.h>
+	<sys/_timespec.h>
+	<cygwin/signal.h>
+	<sys/ucontext.h>
+	<signal.h>
+
+1466684884 d:\cygwin\usr\include\cygwin\signal.h
+	<bits/wordsize.h>
+
+1466684884 d:\cygwin\usr\include\sys\ucontext.h
+	<signal.h>
+
+1466684884 d:\cygwin\usr\include\machine\_time.h
+
+1466684884 d:\cygwin\usr\include\sys\poll.h
+	<sys/cdefs.h>
+	<sys/types.h>
+	<signal.h>
+
+1470252655 d:\cygwin\usr\include\curl\curlrules.h
+
+1470252655 d:\cygwin\usr\include\curl\easy.h
+
+1470252655 d:\cygwin\usr\include\curl\multi.h
+	"curl.h"
+
+1470252655 d:\cygwin\usr\include\curl\typecheck-gcc.h
+
